@@ -29,7 +29,7 @@ a {
 /* ******************* NAVBAR ******************* */
 nav {
   overflow: hidden;
-  background-color: #3F0106;
+  background-color: #524A3A;
   position: fixed;
   width: 100%;
   opacity: 0.9;
@@ -86,77 +86,7 @@ h3 {
 #texteIntro {
   padding: 0px 20%;
 }
-#prestations {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 10%;  
-}
-.imagesPrestations h4 {
-  font-family: 'Dancing Script', cursive;
-  text-align: center;
-  font-size: 1.8em;
-  margin: 15px;
-  font-weight: 300;
-}
-.imagesPrestations img {
-  border-radius: 10px;
-  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
-}
-.imagesPrestations img:hover {
-  opacity: 0.5;
-  transform: scale(1.05);
-  transition: 0.6s ease-in-out;
-}
-/* **************** TOURISME ********************** */
-#tourisme {
-  height: 1400px;
-  background-color: #f1f2f6;
-  padding: 1px 2%;
-}
-#tourisme h2 {
-  padding-top: 60px;
-}
-#ocean {
-  background: url(media/ocean.jpg);
-}
-#chateau {
-  background: url(media/chateau.JPG);
-}
-#phare {
-  background: url(media/phare.JPG);
-}
-#vignoble {
-  background: url(media/vignes.jpg);
-}
-#tourisme li {
-  margin: 65px 100px 0 100px;
-  height: 226px;
-  width: 55%;
-  max-width: 550px;
-  float: left;
-  box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
-}
-#tourisme p {
-  height: 45px;
-  width: 235px;
-  background-color: #01DF74;
-  float:right;
-  margin: 50px -180px 0 0;
-  font-size: 1.5em;
-  text-align: center;
-  padding-top: 15px;
-  box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
-}
-#tourisme #chateau, #tourisme #vignoble {
-  float: right;
-}
-#chateau p, #vignoble p {
-  float: left;
-  background-color: cyan;
-  margin-left: -180px;
-  box-shadow: -4px 4px 0 1px rgba(15,154,156,1);
-}
+
 /* ******************* FOOTER ******************** */
 footer {
   background-color: #524A3A;
