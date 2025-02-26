@@ -9,6 +9,10 @@ body {
   padding: 60;
   margin: 50;
 }
+p {
+padding: 60;
+margin: 50;
+}
 ul {
   margin: 60; 
   padding: 50;
