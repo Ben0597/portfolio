@@ -1,89 +1,113 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Linkedin } from "lucide-react";
 
-    <title>CV - Technicien Informatique</title>
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-50 p-6 md:p-12 font-sans">
+      <div className="max-w-5xl mx-auto">
+        <header className="mb-10 text-center">
+          <h1 className="text-4xl font-bold text-gray-800">Ben Ibrahim Cissé DIOMANDÉ</h1>
+          <p className="text-gray-600 mt-2">Technicien en soutien informatique | Passionné de systèmes et réseaux</p>
+          <div className="flex justify-center gap-4 mt-4">
+            <a href="mailto:benibrahimcisse@gmail.com" className="flex items-center gap-2 text-blue-600">
+              <Mail size={18} /> benibrahimcisse@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/ben-diomande" target="_blank" className="flex items-center gap-2 text-blue-600">
+              <Linkedin size={18} /> LinkedIn
+            </a>
+          </div>
+        </header>
 
-    <link rel="stylesheet" href="style.css">   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Profil Professionnel</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Jeune diplômé en informatique, passionné par le support technique, l'administration système et la gestion réseau. Compétent en dépannage matériel et logiciel, ainsi qu'en installation et configuration de systèmes Windows et Linux. En formation CCNA pour approfondir mes connaissances en réseaux et cybersécurité. Motivé, rigoureux et prêt à relever des défis techniques.
+          </p>
+        </section>
 
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li id="logo"><a href="#">Ben Ibrahim Diomande</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#formation">Formation</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#experience">Expérience</a></li>
-        </ul>
-      </nav>
-      <div id="imagePrincipale">
-        <h1>Technicien En Informatique</h1>
-        <div id="premierTrait"></div>
-        <h3>Spécialiste en maintenance et réseaux</h3>
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Compétences Techniques</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+            <Card>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Administration Système</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Windows 7 à 11, Linux</li>
+                  <li>Windows Server 2012R2 à 2022</li>
+                  <li>Virtualisation (VirtualBox)</li>
+                  <li>Prise en main à distance (AnyDesk)</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Réseaux et Sécurité</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Active Directory, DNS, DHCP</li>
+                  <li>Routeurs, commutateurs Cisco (bases)</li>
+                  <li>Administration de serveurs</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Développement Web</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>HTML5, CSS3</li>
+                  <li>Python (bases)</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-4">
+                <h3 className="font-semibold mb-2">Soft Skills</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Analyse & résolution de problèmes</li>
+                  <li>Adaptation & autonomie</li>
+                  <li>Gestion du temps & priorités</li>
+                  <li>Service à la clientèle</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Formation</h2>
+          <p className="text-gray-700">
+            <strong>DEP en Soutien Informatique</strong>, Collège St-Michel, Montréal <br />
+            2023 - 2025
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Expérience Professionnelle</h2>
+          <p className="text-gray-700">
+            <strong>Préposé à l’entretien</strong>, CIUSSS du Centre-Sud-de-l’Île-de-Montréal <br />
+            Février 2024 - Aujourd’hui <br />
+            • Entretien des locaux, signalement des défaillances, application des protocoles de désinfection.
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Certifications</h2>
+          <ul className="list-disc list-inside text-gray-700">
+            <li>Technicien support informatique – Alison (Mars 2025)</li>
+            <li>Préparation à la certification CCNA – LinkedIn Learning (Mars 2025)</li>
+          </ul>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Langues</h2>
+          <p className="text-gray-700">Français : Avancé | Anglais : Fonctionnel</p>
+        </section>
+
+        <footer className="text-center mt-12 text-gray-500">
+          <p>Références disponibles sur demande.</p>
+        </footer>
       </div>
-    </header>
-
-    <section id="presentation">
-      <div id="texteIntro">
-        <h2>À propos de moi</h2>
-        <p>Technicien Informatique passionné avec une expertise en maintenance, réseaux et support technique. Toujours prêt à résoudre les problèmes et améliorer les systèmes informatiques.</p>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h2>Expérience Professionnelle</h2>
-      <p><strong>Entretien Menager - Santé Québec</strong> (Fevrier 2024 - Présent)</p>
-      <ul>
-      </ul>
-    </section>
-
-    <section id="competences">
-      <h2>Compétences</h2>
-      <ul>
-        <li>Maintenance et dépannage informatique</li>
-        <li>Gestion et configuration de réseaux</li>
-        <li>Systèmes d'exploitation Windows & Linux</li>
-        <li>Support technique et assistance utilisateurs</li>
-        <li>Virtualisation</li>
-        <li>HTML & CSS</li>
-        <li>Active Directory</li>
-        <li>Gestion de base de donnée</li>
-        <li>MS Office</li>
-      </ul>
-    </section>
-
-    <section id="formation">
-      <h2>Formation</h2>
-      <p><strong>2023-2025:</strong> Diplome d'etude professionel en Soutien Informatique </p>
-    </section>
-
-    <footer>
-      <h2 id="contact">Contact</h2>
-      <ul>
-        <p>Adresse : 8305 Rue Ontario Est, Montreal, Quebec</p>
-        <p>Code Postal : H1L 3E5</p>
-        <p>Tel: +1(514) 594-3924</p>
-        <p>Email : benibrahimcisse@gmail.com</p>
-      </ul>
-
-      <div id="deuxiemeTrait"></div>
-      <div id="copyrightEtIcons">
-        <span>© 2025 Ben Diomande / Technicien Informatique</span>
-      </div>
-
-    <div id="icons">
-      <a href="http:www.linkedin.com/in/ben-diomande-797538171" target="_blank"> <i class="fa
-        fa-linkedin"></i></a>
-    
     </div>
-    <p>Dernière mise à jour : <span id="lastModified"></span></p>
-    <script>
-        document.getElementById("lastModified").textContent = document.lastModified;
-    </script>
-    </footer>
-  </body>
-</html>
+  );
+}
